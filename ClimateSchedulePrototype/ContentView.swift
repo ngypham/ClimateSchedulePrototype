@@ -12,12 +12,13 @@ struct ContentView: View {
     @StateObject var preset2 = Preset()
     @StateObject var preset3 = Preset()
     @StateObject var preset4 = Preset()
-    @ObservedObject var scheduledPreset = Preset()
+    @ObservedObject var scheduledPresetA = Preset()
+    @ObservedObject var scheduledPresetB = Preset()
     
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: ScheduleView(preset1: preset1, preset2: preset2, preset3: preset3, preset4: preset4, scheduledPreset: scheduledPreset)) {
+                NavigationLink(destination: ScheduleView(preset1: preset1, preset2: preset2, preset3: preset3, preset4: preset4, scheduledPresetA: scheduledPresetA, scheduledPresetB: scheduledPresetB)) {
                     Text("Schedule Climate Start")
                 }
                 NavigationLink(destination: PresetView(preset: preset1)) {
@@ -40,6 +41,6 @@ struct ContentView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(scheduledPreset: Preset())
+        ContentView(scheduledPresetA: Preset(), scheduledPresetB: Preset())
     }
 }

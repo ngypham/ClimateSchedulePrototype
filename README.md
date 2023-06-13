@@ -1,5 +1,5 @@
 # ClimateSchedulePrototype
-Schedule climate prototype for HMA/HAC MyH.
+Schedule climate prototype.
 
 We will allow the user to quickly copy their regular presets to their scheduled presets.
 This is a one way copy, so changes made after copying a preset to the scheduled preset won't affect the originial preset.

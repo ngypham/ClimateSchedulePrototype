@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ScheduleView: View {
     let quickCopy = ["Preset 1", "Preset 2", "Preset 3", "Preset 4"]
-    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var preset1: Preset
     @ObservedObject var preset2: Preset
     @ObservedObject var preset3: Preset
@@ -24,6 +23,7 @@ struct ScheduleView: View {
             Section {
                 Toggle("Climate Schedule A", isOn: $scheduledPresetA.enabled)
                 DatePicker("Set Climate Start Time", selection: $scheduledPresetA.time, displayedComponents: .hourAndMinute)
+                // Non-functioning day picker, maybe will add later
                 HStack {
                     Text("Set Days")
                     Spacer()
@@ -79,9 +79,12 @@ struct ScheduleView: View {
                 Toggle("Rear Window and Side Mirror Defrosters", isOn: $scheduledPresetA.rearDefrost)
                 Toggle("Steering Wheel Heater", isOn: $scheduledPresetA.steeringWheel)
             }
+            
+            // Maybe will go back and loop this code another time
             Section {
                 Toggle("Climate Schedule B", isOn: $scheduledPresetB.enabled)
                 DatePicker("Set Climate Start Time", selection: $scheduledPresetB.time, displayedComponents: .hourAndMinute)
+                // Non-functioning day picker, maybe will add later
                 HStack {
                     Text("Set Days")
                     Spacer()

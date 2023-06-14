@@ -13,6 +13,7 @@
 		B10225DF2A3897810038373C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10225DE2A3897810038373C /* ContentView.swift */; };
 		B10225E12A3897A10038373C /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10225E02A3897A10038373C /* ScheduleView.swift */; };
 		B10225E32A3897AD0038373C /* PresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10225E22A3897AD0038373C /* PresetView.swift */; };
+		B1073E182A393EE2006AD620 /* NoPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1073E172A393EE2006AD620 /* NoPresetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B10225DE2A3897810038373C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B10225E02A3897A10038373C /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		B10225E22A3897AD0038373C /* PresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetView.swift; sourceTree = "<group>"; };
+		B1073E172A393EE2006AD620 /* NoPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPresetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B10225DE2A3897810038373C /* ContentView.swift */,
 				B10225E02A3897A10038373C /* ScheduleView.swift */,
 				B10225E22A3897AD0038373C /* PresetView.swift */,
+				B1073E172A393EE2006AD620 /* NoPresetView.swift */,
 				B10225D42A3897510038373C /* Assets.xcassets */,
 				B10225D62A3897510038373C /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10225D12A3897500038373C /* ClimateSchedulePrototypeApp.swift in Sources */,
+				B1073E182A393EE2006AD620 /* NoPresetView.swift in Sources */,
 				B10225E32A3897AD0038373C /* PresetView.swift in Sources */,
 				B10225DF2A3897810038373C /* ContentView.swift in Sources */,
 				B10225E12A3897A10038373C /* ScheduleView.swift in Sources */,

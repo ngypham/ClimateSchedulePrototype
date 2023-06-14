@@ -18,20 +18,29 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: ScheduleView(preset1: preset1, preset2: preset2, preset3: preset3, preset4: preset4, scheduledPresetA: scheduledPresetA, scheduledPresetB: scheduledPresetB)) {
-                    Text("Schedule Climate Start")
+                Section {
+                    NavigationLink(destination: ScheduleView(preset1: preset1, preset2: preset2, preset3: preset3, preset4: preset4, scheduledPresetA: scheduledPresetA, scheduledPresetB: scheduledPresetB)) {
+                        Text("Schedule Climate Start")
+                    }
+                    NavigationLink(destination: NoPresetView()) {
+                        Text("Climate Start Without Presets")
+                    }
                 }
-                NavigationLink(destination: PresetView(preset: preset1)) {
-                    Text("Preset 1 \(preset1.name)")
-                }
-                NavigationLink(destination: PresetView(preset: preset2)) {
-                    Text("Preset 2 \(preset2.name)")
-                }
-                NavigationLink(destination: PresetView(preset: preset3)) {
-                    Text("Preset 3 \(preset3.name)")
-                }
-                NavigationLink(destination: PresetView(preset: preset4)) {
-                    Text("Preset 4 \(preset4.name)")
+                
+                // The actual app would not display "Preset 1" before the name of the actual preset, but this was done as otherwise it would initalize as empty strings. The real app would not have this issue since it calls the API to initalize each preset.
+                Section {
+                    NavigationLink(destination: PresetView(preset: preset1)) {
+                        Text("Preset 1 \(preset1.name)")
+                    }
+                    NavigationLink(destination: PresetView(preset: preset2)) {
+                        Text("Preset 2 \(preset2.name)")
+                    }
+                    NavigationLink(destination: PresetView(preset: preset3)) {
+                        Text("Preset 3 \(preset3.name)")
+                    }
+                    NavigationLink(destination: PresetView(preset: preset4)) {
+                        Text("Preset 4 \(preset4.name)")
+                    }
                 }
             }
             .navigationTitle("Climate Start Presets")
